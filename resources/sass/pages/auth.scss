@@ -1,0 +1,111 @@
+button.authbtn {
+    width: 220px;
+    border: 1px solid lightgrey;
+    font-family: brandonregular;
+    font-size: 16px;
+}
+
+label {
+    font-size: 16px;
+}
+
+.createuser {
+    width: 50%;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.user {
+    padding-bottom: 3px;
+    font-size: 16px;
+
+    h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    a {
+        color: black;
+    }
+
+    button:hover {
+        color: red;
+        cursor: pointer;
+    }
+
+}
+
+.users {
+    display: inline-block;
+    width: 50%;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+    }
+
+    &.fullwidth {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-bottom: 5px;
+        font-family: BrandonBlack;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    th {
+        background-color: #54d9b3;
+        font-family: 'brandonbold';
+        font-weight: 400 !important;
+    }
+}
+
+.postbtn {
+    background: #54D9B3;
+    box-sizing: border-box;
+    appearance: none;
+    border: none;
+    border-radius: 16px;
+    color: $black;
+    cursor: pointer;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 30px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'BrandonBold', sans-serif;
+
+    &:hover,
+    &:focus {
+        transition: 250ms;
+        color: $yellow;
+        outline: 0;
+    }
+}
+
+.first {
+    transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+
+    &:hover {
+        box-shadow: 0 0 40px 40px $red inset;
+    }
+}
+
+h1.createuser {
+    font-size: 32px;
+}

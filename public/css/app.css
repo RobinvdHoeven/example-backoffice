@@ -1,0 +1,1053 @@
+@charset "UTF-8";
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+​ ​ ​ html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  /* Adjust font size */
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  /* Font varient */
+  font-variant-ligatures: none;
+  -webkit-font-variant-ligatures: none;
+  /* Smoothing */
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+  height: 100%;
+  font-size: 10px;
+}
+
+​ ​ ​ body {
+  margin: 0;
+  min-height: 100%;
+}
+
+​ ​ main {
+  display: block;
+}
+
+​ ​ h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+​ ​ ​ hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+​ ​ pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+​ ​ ​ a {
+  background-color: transparent;
+}
+
+​ ​ abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+​ ​ b,
+strong {
+  font-weight: bolder;
+}
+
+​ ​ code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+​ ​ small {
+  font-size: 80%;
+}
+
+​ ​ sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+​ sub {
+  bottom: -0.25em;
+}
+
+​ sup {
+  top: -0.5em;
+}
+
+​ ​ ​ img {
+  border-style: none;
+}
+
+​ ​ ​ button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+​ ​ button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+​ ​ button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+​ ​ button,
+[type=button],
+[type=reset],
+[type=submit] {
+  -webkit-appearance: button;
+}
+
+​ ​ button::-moz-focus-inner,
+[type=button]::-moz-focus-inner,
+[type=reset]::-moz-focus-inner,
+[type=submit]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+​ ​ button:-moz-focusring,
+[type=button]:-moz-focusring,
+[type=reset]:-moz-focusring,
+[type=submit]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+​ ​ fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+​ ​ legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+​ ​ progress {
+  vertical-align: baseline;
+}
+
+​ ​ textarea {
+  overflow: auto;
+}
+
+​ ​ [type=checkbox],
+[type=radio] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+​ ​ [type=number]::-webkit-inner-spin-button,
+[type=number]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+​ ​ [type=search] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+​ ​ [type=search]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+​ ​ ::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+​ ​ ​ details {
+  display: block;
+}
+
+​ ​ summary {
+  display: list-item;
+}
+
+​ ​ ​ ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+
+​ template {
+  display: none;
+}
+
+​ ​ [hidden] {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.content {
+  padding: 10px 20px 0;
+  margin-left: 230px;
+}
+
+@media (max-width: 600px) {
+  .content {
+    margin-left: 0 !important;
+  }
+}
+
+.statscontainer .row .stats {
+  display: inline-block;
+  padding: 10px 15px 0 15px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  border-right: 1.3px solid darkgrey;
+}
+
+@media screen and (max-width: 1024px) {
+  .statscontainer .row .stats {
+    width: 40%;
+    text-align: center;
+    border: 1px solid darkgrey;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .statscontainer .row .stats {
+    width: 100%;
+    text-align: center;
+    border: 1px solid darkgrey;
+  }
+}
+
+.statscontainer .row .count {
+  font-size: 40px;
+  font-weight: normal;
+  font-family: "BrandonBold";
+  text-align: center;
+}
+
+.statscontainer .row span.statsbottom {
+  font-size: 13px;
+}
+
+.statscontainer .row span.statstitle {
+  font-family: "BrandonRegular";
+  font-weight: normal;
+  font-size: 14px;
+}
+
+.chart {
+  width: 1050px;
+}
+
+@media screen and (max-width: 1024px) {
+  .chart {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .chart {
+    width: 500px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .chart {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+}
+
+.participants {
+  display: inline-block;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .participants {
+    width: 100%;
+    padding-left: 0;
+  }
+}
+
+.participants.fullwidth {
+  width: 100%;
+}
+
+.participants h1 {
+  font-size: 32px;
+  padding-bottom: 5px;
+  font-family: BrandonBlack;
+}
+
+.participants table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.participants th {
+  text-align: left;
+  padding: 8px;
+}
+
+.participants td {
+  text-align: left;
+  padding: 8px;
+  font-family: "brandonregular";
+}
+
+.participants tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.participants th {
+  background-color: #54d9b3;
+  color: #2e3c45;
+  font-family: "BrandonBold";
+  font-weight: 400 !important;
+}
+
+.participant {
+  font-family: "BrandonBold";
+  padding-bottom: 3px;
+  font-size: 16px;
+  color: #2e3c45;
+  font-weight: normal;
+}
+
+.participant h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.participant a {
+  color: #2e3c45;
+}
+
+.traffic {
+  width: 30%;
+  display: inline-block;
+  float: right;
+  margin-right: 150px;
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .traffic {
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+.traffic h1 {
+  font-size: 32px;
+  padding-bottom: 5px;
+  font-family: BrandonBlack;
+}
+
+.traffic table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.traffic th,
+.traffic td {
+  text-align: left;
+  padding: 8px;
+}
+
+.traffic tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.traffic th {
+  background-color: #54d9b3;
+  font-family: "brandonbold";
+  font-weight: 400 !important;
+}
+
+#line-chart {
+  display: none;
+}
+
+input.form-control {
+  width: 150px;
+  padding: 7px;
+  font-size: 14px;
+  border: solid 1px lightgrey;
+  float: left;
+}
+
+@media (max-width: 600px) {
+  input.form-control {
+    width: 80%;
+  }
+}
+
+form.searchbar {
+  height: 32px;
+}
+
+.search {
+  width: 100%;
+}
+
+li.total {
+  font-size: 16px;
+}
+
+button.btn {
+  height: 32px;
+  width: 32px;
+  float: left;
+  border-right: solid 1px lightgrey;
+  border-top: solid 1px lightgrey;
+  border-bottom: solid 1px lightgrey;
+  border-left: 0;
+}
+
+@media (max-width: 600px) {
+  button.btn {
+    width: 20%;
+  }
+}
+
+button.btn:hover {
+  cursor: pointer;
+}
+
+.update {
+  width: 100%;
+}
+
+td.error {
+  color: red;
+}
+
+form {
+  font-size: 16px;
+}
+
+input {
+  width: 375px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  input {
+    width: 100%;
+  }
+}
+
+textarea {
+  width: 375px;
+  height: 80px;
+  padding: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  textarea {
+    width: 100%;
+    height: 80px;
+  }
+}
+
+tr.padding {
+  padding: 5px;
+}
+
+td.width {
+  width: 20%;
+}
+
+@media only screen and (max-width: 600px) {
+  td.width {
+    width: 40%;
+  }
+}
+
+h1 {
+  font-family: BrandonBlack;
+}
+
+button.updatebtn {
+  height: 30px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  button.updatebtn {
+    height: 30px;
+    width: 100%;
+  }
+}
+
+a.btn {
+  font-size: 16px;
+  height: 30px;
+  width: 200px;
+}
+
+@media only screen and (max-width: 600px) {
+  a.btn {
+    height: 30px;
+    width: 100%;
+  }
+}
+
+h2.stats {
+  background: #54D9B3;
+  color: #fff;
+  padding: 5px;
+  margin: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+h1.stats {
+  font-size: 32px;
+}
+
+.panel {
+  background: #ffffff;
+  margin: 20px 20px 20px 0;
+  border: 1px solid #fff;
+  box-shadow: 0px 0px 2px #aaa;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  .panel {
+    margin: 20px 0 20px 0;
+  }
+}
+
+i.stats {
+  margin: 10px;
+  display: block;
+  font-size: 10px;
+  color: #aaa;
+  text-align: center;
+}
+
+td.stats {
+  padding: 5px;
+}
+
+th.stats {
+  padding: 5px;
+  text-align: left;
+}
+
+tr.total td {
+  background: #ccc;
+}
+
+tr.stats:nth-child(even) {
+  background: #efefef;
+}
+
+.body {
+  padding: 5px;
+}
+
+table.tablewidth {
+  width: 100%;
+}
+
+select.stats {
+  margin-left: 10px;
+  font-size: 12pt;
+  height: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+  select.stats {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+select.stats:hover {
+  cursor: pointer;
+}
+
+button.authbtn {
+  width: 220px;
+  border: 1px solid lightgrey;
+  font-family: brandonregular;
+  font-size: 16px;
+}
+
+label {
+  font-size: 16px;
+}
+
+.createuser {
+  width: 50%;
+}
+
+@media only screen and (max-width: 600px) {
+  .createuser {
+    width: 100%;
+  }
+}
+
+.user {
+  padding-bottom: 3px;
+  font-size: 16px;
+}
+
+.user h2 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.user a {
+  color: black;
+}
+
+.user button:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.users {
+  display: inline-block;
+  width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .users {
+    width: 100%;
+  }
+}
+
+.users.fullwidth {
+  width: 100%;
+}
+
+.users h1 {
+  font-size: 32px;
+  padding-bottom: 5px;
+  font-family: BrandonBlack;
+}
+
+.users table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.users th,
+.users td {
+  text-align: left;
+  padding: 8px;
+}
+
+.users tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.users th {
+  background-color: #54d9b3;
+  font-family: "brandonbold";
+  font-weight: 400 !important;
+}
+
+.postbtn {
+  background: #54D9B3;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 16px;
+  color: #2e3c45;
+  cursor: pointer;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "BrandonBold", sans-serif;
+}
+
+.postbtn:hover,
+.postbtn:focus {
+  transition: 250ms;
+  color: #f7ea4e;
+  outline: 0;
+}
+
+.first {
+  transition: box-shadow 300ms ease-in-out, color 300ms ease-in-out;
+}
+
+.first:hover {
+  box-shadow: 0 0 40px 40px #f97471 inset;
+}
+
+h1.createuser {
+  font-size: 32px;
+}
+
+@font-face {
+  font-family: "BrandonBlack";
+  src: url("/fonts/3B29A6_0_0.eot");
+  src: url("/fonts/3B29A6_0_0.eot?#iefix") format("embedded-opentype"), url("/fonts/3B29A6_0_0.woff2") format("woff2"), url("/fonts/3B29A6_0_0.woff") format("woff"), url("/fonts/3B29A6_0_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BrandonBold";
+  src: url("/fonts/3B29A6_1_0.eot");
+  src: url("/fonts/3B29A6_1_0.eot?#iefix") format("embedded-opentype"), url("/fonts/3B29A6_1_0.woff2") format("woff2"), url("/fonts/3B29A6_1_0.woff") format("woff"), url("/fonts/3B29A6_1_0.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "BrandonRegular";
+  src: url("/fonts/3B29A6_2_0.eot");
+  src: url("/fonts/3B29A6_2_0.eot?#iefix") format("embedded-opentype"), url("/fonts/3B29A6_2_0.woff2") format("woff2"), url("/fonts/3B29A6_2_0.woff") format("woff"), url("/fonts/3B29A6_2_0.ttf") format("truetype");
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
+
+.nav {
+  top: 0;
+  bottom: 0;
+  width: 230px;
+  padding: 0;
+  position: fixed;
+  background: #54d9b3;
+  z-index: 9999;
+}
+
+@media screen and (max-width: 600px) {
+  .nav {
+    width: 100%;
+    display: none;
+  }
+}
+
+.nav .navtitle {
+  height: 57px;
+  width: 230px;
+  background: #54d9b3;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .nav .navtitle {
+    width: 100%;
+  }
+}
+
+.nav .navtitle .toggle {
+  display: none;
+  float: right;
+  margin-right: 12px;
+}
+
+@media screen and (max-width: 600px) {
+  .nav .navtitle .toggle {
+    display: inline-block;
+  }
+}
+
+.nav .navtitle a {
+  font-family: "BrandonBlack";
+  text-overflow: ellipsis;
+  overflow: hidden;
+  font-size: 32px;
+  margin-left: 12px;
+  line-height: 59px;
+  display: inline-block;
+  height: 55px;
+  font-weight: normal;
+  color: #2e3c45;
+}
+
+.nav .navmenu {
+  margin-bottom: 35px;
+}
+
+.nav .navmenu li {
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+
+.nav .navmenu li a {
+  position: relative;
+  display: block;
+  color: #2e3c45;
+  padding: 13px 15px 12px;
+  cursor: pointer;
+}
+
+.nav .navmenu li a:hover {
+  font-family: brandonblack;
+  color: #f7ea4e;
+  transition: 250ms;
+}
+
+.nav .navmenu ul.navmenu {
+  margin-top: 10px;
+  display: block;
+  padding-left: 0;
+}
+
+.nav .navmenu span.fa {
+  text-align: right;
+  float: right;
+}
+
+.nav .navmenu i {
+  display: inline-block;
+  width: 26px;
+  opacity: 0.99;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+}
+
+.mainnavtop {
+  display: block;
+  margin-left: 230px;
+}
+
+@media (max-width: 600px) {
+  .mainnavtop {
+    margin-left: 0 !important;
+  }
+}
+
+.mainnavtop ul.navbar-right {
+  margin-right: 13px;
+  width: auto;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.mainnavtop ul.navbar-right li.nav-item {
+  padding-left: 15px;
+}
+
+.mainnavtop ul.navbar-right li.nav-item i {
+  font-size: 16px;
+}
+
+.mainnavtop .navtop {
+  float: left;
+  background: #2e3c45;
+  border-bottom: 1px solid #D9DEE4;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 15px;
+  display: inline-block;
+}
+
+.mainnavtop .navtop i {
+  font-size: 26px;
+}
+
+.mainnavtop .navtop .toggle {
+  display: inline-block;
+  padding-top: 5px;
+  float: left;
+  color: white;
+}
+
+.mainnavtop .navtop a.user {
+  margin-right: 13px;
+  font-size: 14px;
+  color: white;
+}
+
+.mainnavtop .navbar-nav {
+  list-style: none;
+  float: right;
+  height: 56px;
+}
+
+body {
+  font-family: "BrandonRegular";
+  margin: 0;
+  color: #2e3c45;
+  font-size: 13px;
+  line-height: 1.471;
+}
+
+body h1,
+body h2,
+body h3 {
+  font-weight: normal;
+}
+
+body li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #73879C;
+}
+
+/* Dropdown Button */
+
+.dropbtn {
+  color: white;
+  font-size: 18px;
+  border: none;
+  background-color: #2E3C45;
+  font-family: BrandonRegular;
+}
+
+.dropbtn:hover {
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 150px;
+  width: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content a {
+  color: black;
+  text-decoration: none;
+  display: block;
+  font-size: 16px;
+  padding-left: 15px;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.statspage h2 {
+  color: black !important;
+  font-family: "BrandonBold";
+}
+
+.statspage .panel {
+  background: none;
+  border: none;
+  padding: none;
+  box-shadow: none;
+}
+
+ul.pagination {
+  margin: 0;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+ul.pagination li.page-item {
+  display: inline-block;
+  padding-left: 5px;
+}
+
+.pagination > .active {
+  font-size: 18px;
+  text-decoration: underline;
+}
+
+#change:hover {
+  color: red;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+#pending:hover {
+  color: lawngreen;
+}
+
+#pending2:hover {
+  color: red;
+}
+

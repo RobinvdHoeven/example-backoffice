@@ -1,0 +1,99 @@
+body {
+    @media screen and (max-width: 600px) {
+        width: 100%;
+    }
+}
+
+.nav {
+    top: 0;
+    bottom: 0;
+    width: 230px;
+    padding: 0;
+    position: fixed;
+    background: $green;
+    z-index: 9999;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+        display: none;
+    }
+
+
+    .navtitle {
+        height: 57px;
+        width: 230px;
+        background: $green;
+        padding: 0;
+        @media screen and (max-width: 600px) {
+            width: 100%;
+        }
+
+        .toggle {
+            display: none;
+            float: right;
+            margin-right: 12px;
+
+            @media screen and (max-width: 600px) {
+                display: inline-block;
+            }
+        }
+
+        a {
+            font-family: 'BrandonBlack';
+            text-overflow: ellipsis;
+            overflow: hidden;
+            font-size: 32px;
+
+            margin-left: 12px;
+            line-height: 59px;
+            display: inline-block;
+            height: 55px;
+            font-weight: normal;
+            color: $black;
+        }
+    }
+
+    .navmenu {
+        margin-bottom: 35px;
+
+        li {
+            position: relative;
+            display: block;
+            cursor: pointer;
+
+            a {
+                position: relative;
+                display: block;
+                color: $black;
+                padding: 13px 15px 12px;
+                cursor: pointer;
+            }
+
+            a:hover {
+                font-family: brandonblack;
+                color: $yellow;
+                transition: 250ms;
+            }
+        }
+
+        ul.navmenu {
+            margin-top: 10px;
+            display: block;
+            padding-left: 0;
+        }
+
+
+        span.fa {
+            text-align: right;
+            float: right;
+        }
+
+        i {
+            display: inline-block;
+            width: 26px;
+            opacity: .99;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+        }
+    }
+}

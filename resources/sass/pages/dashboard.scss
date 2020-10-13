@@ -1,0 +1,192 @@
+//@import 'reboot.scss';
+
+
+.content {
+    padding: 10px 20px 0;
+    margin-left: 230px;
+
+    @media (max-width: 600px) {
+        margin-left: 0 !important;
+    }
+}
+
+.statscontainer {
+
+    .row {
+
+        .stats {
+            display: inline-block;
+            padding: 10px 15px 0 15px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            border-right: 1.3px solid darkgrey;
+
+            @media screen and (max-width: 1024px) {
+                width: 40%;
+                text-align: center;
+                border: 1px solid darkgrey;
+            }
+
+            @media screen and (max-width: 600px) {
+                width: 100%;
+                text-align: center;
+                border: 1px solid darkgrey;
+            }
+        }
+
+        .count {
+            font-size: 40px;
+            font-weight: normal;
+            font-family: 'BrandonBold';
+            text-align: center;
+        }
+
+        span.statsbottom {
+            font-size: 13px;
+        }
+
+        span.statstitle {
+            font-family: 'BrandonRegular';
+            font-weight: normal;
+            font-size: 14px;
+        }
+    }
+}
+
+.chart {
+    width: 1050px;
+    @media screen and (max-width: 1024px) {
+        width: 700px;
+    }
+
+    @media screen and (max-width: 770px) {
+        width: 500px;
+    }
+
+    @media screen and (max-width: 600px) {
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+
+}
+
+.participants {
+
+    display: inline-block;
+    width: 50%;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    &.fullwidth {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-bottom: 5px;
+        font-family: BrandonBlack;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th {
+        text-align: left;
+        padding: 8px;
+    }
+
+    td {
+        text-align: left;
+        padding: 8px;
+        font-family: 'brandonregular';
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    th {
+        background-color: #54d9b3;
+        color: $black;
+        font-family: 'BrandonBold';
+        font-weight: 400 !important;
+
+    }
+
+
+}
+
+.participant {
+    font-family: 'BrandonBold';
+    padding-bottom: 3px;
+    font-size: 16px;
+    color: $black;
+    font-weight: normal;
+
+    h2 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    a {
+        color: $black;
+    }
+
+}
+
+.traffic {
+    width: 30%;
+    display: inline-block;
+    float: right;
+    margin-right: 150px;
+    font-size: 16px;
+    @media screen and (max-width: 1024px) {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-bottom: 5px;
+        font-family: BrandonBlack;
+    }
+
+    table {
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    th, td {
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2
+    }
+
+    th {
+        background-color: #54d9b3;
+        font-family: 'brandonbold';
+        font-weight: 400 !important;
+    }
+}
+
+#line-chart {
+    display: none;
+}
+
+//[data-template="dashboard"] {
+//    p {
+//        color: red
+//    }
+//}
+

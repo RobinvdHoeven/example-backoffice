@@ -1,0 +1,71 @@
+h2.stats {
+    background: #54D9B3;
+    color: #fff;
+    padding: 5px;
+    margin: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+h1.stats {
+    font-size: 32px;
+}
+
+.panel {
+    background: #ffffff;
+    margin: 20px 20px 20px 0;
+    border: 1px solid #fff;
+    box-shadow: 0px 0px 2px #aaa;
+    border-radius: 5px;
+    @media only screen and (max-width: 600px) {
+        margin: 20px 0 20px 0;
+    }
+}
+
+i.stats {
+    margin: 10px;
+    display: block;
+    font-size: 10px;
+    color: #aaa;
+    text-align: center;
+}
+
+td.stats {
+    padding: 5px;
+}
+
+th.stats {
+    padding: 5px;
+    text-align: left;
+}
+
+
+tr.total td {
+    background: #ccc;
+}
+
+tr.stats:nth-child(even) {
+    background: #efefef
+}
+
+.body {
+    padding: 5px;
+}
+
+table.tablewidth {
+    width: 100%;
+}
+
+select.stats {
+    margin-left: 10px;
+    font-size: 12pt;
+    height: 30px;
+    @media only screen and (max-width: 600px) {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+select.stats:hover {
+    cursor: pointer;
+}

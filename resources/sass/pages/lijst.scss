@@ -1,0 +1,42 @@
+input.form-control {
+    width: 150px;
+    padding: 7px;
+    font-size: 14px;
+    border: solid 1px lightgrey;
+    float: left;
+    @media (max-width: 600px) {
+        width: 80%;
+    }
+}
+
+form.searchbar {
+    height: 32px;
+}
+
+.search {
+    width: 100%;
+
+}
+
+li.total {
+    font-size: 16px;
+}
+
+button.btn {
+    height: 32px;
+    width: 32px;
+    float: left;
+    border-right: solid 1px lightgrey;
+    border-top: solid 1px lightgrey;
+    border-bottom: solid 1px lightgrey;
+    border-left: 0;
+    @media (max-width: 600px) {
+        width: 20%;
+    }
+}
+
+button.btn:hover {
+    cursor: pointer;
+}
+
+
